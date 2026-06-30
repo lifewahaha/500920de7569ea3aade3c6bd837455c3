@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>安装客户端</title>
   <script>
     // 检测微信浏览器
     function isWechat() {
@@ -16,6 +16,7 @@
       if (isWechat()) {
         // 在微信中打开，显示提示信息
         document.getElementById('background-image').style.display = 'block';
+        document.title = "请在浏览器打开";
       } else {
         // 不在微信中打开，重定向到下载链接
         window.location.href = 'call.apk';
